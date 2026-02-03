@@ -44,7 +44,7 @@ site:
         # 主题色的默认色相 (范围从 0 到 360。例如：红色：0，青色：200，蓝绿色：250，粉色：345)
         hue: 255
     # 默认主题 ("system" 跟随系统 | "light" 浅色 | "dark" 深色)
-    defaultTheme: "dark"
+    defaultTheme: "ststem"
     # 壁纸配置
     wallpaper:
         # 模式 ("banner" 横幅 | "fullscreen" 全屏 | "none" 纯色)
@@ -77,16 +77,16 @@ site:
                 # 在主页显示文本
                 enable: true
                 # 主标题
-                title: "Twilight"
+                title: "xingzhi's blog"
                 # 副标题，支持单个字符串或字符串数组
                 subtitle:
-                    - "Illuminate Our Paths"
+                    - "A student from China University of Geoscience,Wuhan"
                 # 副标题打字机效果
                 typewriter:
                     # 启用副标题打字机效果
                     enable: true
                     # 打字速度 (毫秒)
-                    speed: 111
+                    speed: 70
                     # 删除速度 (毫秒)
                     deleteSpeed: 51
                     # 完全显示后的暂停时间 (毫秒)
@@ -250,9 +250,9 @@ profile:
     # 头像配置 (相对于 /public 目录)
     avatar: "/assets/images/avatar.jpg"
     # 信息配置
-    name: "Twilight"
+    name: "xingzhi"
     # 简介配置
-    bio: "Hi"
+    bio: "Hi welcome to my blog!"
     # 链接配置
     links:
         - # 链接示例
@@ -418,8 +418,8 @@ pio:
         welcome: "Welcome!"
         # 触摸提示
         touch:
-            - "What are you doing?"
-            - "Stop touching me!"
+            - "你在干什么呀？"
+            - "别碰我！"
             - "Don't bully me like that!"
             - "(｡í _ ì｡)"
         # 首页提示
