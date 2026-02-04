@@ -1,0 +1,23 @@
+{
+    "title": "VisionGuard",
+    "description": "A video anomaly detection system based on VadCLIP and multi-modal large models, developed for the Telecom Cup competition.",
+    "image": "",
+    "category": "AI Application",
+    "techStack": [
+        "Python",
+        "PyTorch",
+        "VadCLIP",
+        "OpenCV"
+    ],
+    "status": "completed",
+    "liveDemo": "",
+    "sourceCode": "https://github.com/YanjunTong/VisionGuard",
+    "startDate": "2026-01-01",
+    "endDate": "2026-01-20",
+    "featured": true,
+    "tags": [
+        "Competition",
+        "Computer Vision",
+        "Deep Learning"
+    ]
+}
