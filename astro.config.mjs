@@ -5,9 +5,10 @@ import svelte, { vitePreprocess } from "@astrojs/svelte";
 import tailwindcss from "@tailwindcss/vite";
 import swup from "@swup/astro";
 import sitemap from "@astrojs/sitemap";
-import vercel from "@astrojs/vercel";
-import cloudflarePages from "@astrojs/cloudflare";
-import decapCmsOauth from "astro-decap-cms-oauth";
+// import vercel from "@astrojs/vercel";  // ❌ 暂时注释，静态部署不需要
+// import cloudflarePages from "@astrojs/cloudflare"; // ❌ 暂时注释
+// import decapCmsOauth from "astro-decap-cms-oauth"; // ❌ 暂时注释，避免报错
+
 import expressiveCode from "astro-expressive-code";
 import icon from "astro-icon";
 import rehypeAutolinkHeadings from "rehype-autolink-headings";
@@ -31,10 +32,13 @@ import { remarkExcerpt } from "./src/plugins/remark-excerpt.js";
 import { remarkMermaid } from "./src/plugins/remark-mermaid.js";
 import { remarkReadingTime } from "./src/plugins/remark-reading-time.mjs";
 
-const adapter = process.env.CF_PAGES ? cloudflarePages() : vercel({ mode: "serverless" });
+// ❌ 暂时注释适配器选择逻辑
+// const adapter = process.env.CF_PAGES ? cloudflarePages() : vercel({ mode: "serverless" });
 
 export default defineConfig({
-    // 1. 统一端口为 8080，方便 Tunnel 连接
+    // ✅ 关键修改：强制设置为静态输出
+    output: 'static',
+
     server: {
         port: 4321,
         host: true
@@ -43,14 +47,16 @@ export default defineConfig({
     site: siteConfig.siteURL,
     base: "/",
     trailingSlash: "always",
-    adapter: adapter,
     
-    // 2. 这里是原来的 integrations 配置，保持不变
+    // ❌ 暂时注释适配器
+    // adapter: adapter, 
+    
     integrations: [
-        decapCmsOauth({
-            decapCMSVersion: "3.3.3",
-            oauthDisabled: false,
-        }),
+        // ❌ 暂时注释 OAuth 登录插件，防止构建报错
+        // decapCmsOauth({
+        //     decapCMSVersion: "3.3.3",
+        //     oauthDisabled: false,
+        // }),
         swup({
             theme: false,
             animationClass: "transition-swup-",
@@ -186,10 +192,8 @@ export default defineConfig({
         ],
     },
 
-    // 3. 关键修改：这是合并后的 vite 配置块
     vite: {
         server: {
-            // 不要写 true 了，直接把名字写死，看它还怎么拦！
             allowedHosts: ['blog.xingzhi.cv', 'xingzhi.cv']
         },
         plugins: [tailwindcss()],
