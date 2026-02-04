@@ -55,7 +55,7 @@ site:
             desktop:
                 - "/assets/images/desktopWallpaper_4.jpg"
                 - "/assets/images/desktopWallpaper_5.jpg"
-                - "/assets/images/desktopWallpaper_6.jpg"
+                - "/assets/images/desktopWallpaper_2.jpg"
             # 移动壁纸图片 (相对于 /public 目录; 支持单张图片或图片数组，当数组长度 > 1 时自动启用轮播)
             mobile:
                 - "/assets/images/mobileWallpaper_1.jpg"
@@ -244,7 +244,7 @@ profile:
     # 信息配置
     name: "xingzhi"
     # 简介配置
-    bio: "Hi welcome to my blog!"
+    bio: "A student from China University of Geoscience,Wuhan"
     # 链接配置
     links:
         - # 链接示例
@@ -260,7 +260,7 @@ announcement:
     # 公告标题
     title: "Announcement"
     # 公告内容
-    content: "Welcome to my blog!"
+    content: "欢迎来到xingzhi的博客，交流技术，共同进步"
     # 允许用户关闭公告
     closable: true
     # 链接配置
@@ -287,7 +287,7 @@ post:
     # 许可证配置
     license:
         # 启用许可证
-        enable: true
+        enable: false
         # 许可证名称
         name: "CC BY-NC-SA 4.0"
         # 许可证链接

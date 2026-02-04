@@ -49,7 +49,7 @@ export default defineConfig({
     integrations: [
         decapCmsOauth({
             decapCMSVersion: "3.3.3",
-            oauthDisabled: true,
+            oauthDisabled: false,
         }),
         swup({
             theme: false,
