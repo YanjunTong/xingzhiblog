@@ -1,0 +1,20 @@
+{
+    "title": "VisionGuard",
+    "description": "A multimodal learning-based video anomaly detection system, specifically optimized for vehicle collision detection, supporting recognition and localization of various abnormal events.",
+    "image": "",
+    "category": "website",
+    "techStack": [
+        "Python",
+        "VAD",
+        "AI"
+    ],
+    "status": "completed",
+    "sourceCode": "https://github.com/YanjunTong/VisionGuard",
+    "startDate": "2025-10-01",
+    "endDate": "2026-01-09",
+    "featured": true,
+    "tags": [
+        "Personal Project",
+        "Open Source Project"
+    ]
+}
