@@ -1,0 +1,22 @@
+{
+    "title": "中国地质大学（武汉）工程学院PCB",
+    "description": "为中国地质大学（武汉）工程学院设计的 PCB 纪念板。使用立创 EDA 设计，集成了学院标志性元素，既可作为开发板扩展，也可作为电子徽章收藏。",
+    "image": "",
+    "category": "hardware",
+    "techStack": [
+        "EasyEDA",
+        "PCB",
+        "Circuit Design"
+    ],
+    "status": "completed",
+    "liveDemo": "https://oshwhub.com/muyunjian/china-university-of-geosciences",
+    "sourceCode": "https://oshwhub.com/muyunjian/china-university-of-geosciences",
+    "startDate": "2026-02-01",
+    "endDate": "2026-02-05",
+    "featured": true,
+    "tags": [
+        "Hardware",
+        "CUG",
+        "Maker"
+    ]
+}
