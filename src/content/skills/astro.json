@@ -1,15 +1,15 @@
 {
-    "name": "Astro",
-    "description": "A modern static site generator supporting multi-framework integration.",
-    "icon": "logos:astro-icon",
-    "category": "frontend",
-    "level": "beginner",
+    "name": "Python",
+    "description": "适用于后端、自动化人工智能以及数据科学的强大语言。",
+    "icon": "logos:python",
+    "category": "开发语言",
+    "level": "advanced",
     "experience": {
-        "years": 0,
+        "years": 4,
         "months": 3
     },
     "projects": [
         "Twilight"
     ],
-    "color": "#BC52EE"
+    "color": "#3776AB"
 }

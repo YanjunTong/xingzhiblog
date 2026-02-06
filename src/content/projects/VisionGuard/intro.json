@@ -2,7 +2,7 @@
     "title": "VisionGuard",
     "description": "A video anomaly detection system based on VadCLIP and multi-modal large models, developed for the Telecom Cup competition.",
     "image": "",
-    "category": "AI Application",
+    "category": "ai",
     "techStack": [
         "Python",
         "PyTorch",

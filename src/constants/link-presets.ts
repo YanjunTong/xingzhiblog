@@ -8,13 +8,13 @@ export const LinkPresets: { [key in LinkPreset]: NavbarLink } = {
         name: i18n(I18nKey.home),
         url: "/",
         icon: "material-symbols:home",
-        description: "Twilight - A simple, clean, and beautiful blog theme.",
+        description: "T",
     },
     [LinkPreset.Archive]: {
         name: i18n(I18nKey.archive),
         url: "/archive/",
         icon: "material-symbols:archive",
-        description: "A chronological list of all published posts.",
+        description: "文章发表记录",
     },
     [LinkPreset.Projects]: {
         name: i18n(I18nKey.projects),
@@ -56,7 +56,7 @@ export const LinkPresets: { [key in LinkPreset]: NavbarLink } = {
         name: i18n(I18nKey.friends),
         url: "/friends/",
         icon: "material-symbols:group",
-        description: "A curated list of friend sites.",
+        description: "友站列表",
     },
     [LinkPreset.About]: {
         name: i18n(I18nKey.about),

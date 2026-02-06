@@ -185,6 +185,7 @@ navbar:
                     "Skills"
         - # 一级导航链接 - 好友 (预设)
             "Friends"
+        -   "About"
 
 # 侧边栏配置
 sidebar:
@@ -258,9 +259,9 @@ profile:
 # 公告配置
 announcement:
     # 公告标题
-    title: "Announcement"
+    title: "网页公告"
     # 公告内容
-    content: "欢迎来到xingzhi的博客，交流技术，共同进步"
+    content: "欢迎来到我的博客，一起交流技术，共同进步。"
     # 允许用户关闭公告
     closable: true
     # 链接配置
