@@ -14,7 +14,7 @@
     "sourceCode": "https://github.com/YanjunTong/VisionGuard",
     "startDate": "2026-01-01",
     "endDate": "2026-01-20",
-    "featured": true,
+    "featured": false,
     "tags": [
         "Competition",
         "Computer Vision",

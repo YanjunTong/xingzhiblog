@@ -1,0 +1,23 @@
+{
+  "title": "VQ-VAD",
+  "description": "An advanced Video Anomaly Detection (VAD) and frame localization framework powered by VADCLIP and Qwen2-VL-7B. (基于 VADCLIP 与 Qwen2-VL-7B 的视频异常检测与帧级精确定位框架。)",
+  "image": "VQ-VAD.png",
+  "category": "AI Application",
+  "techStack": [
+    "Python",
+    "PyTorch",
+    "VadCLIP",
+    "OpenCV"
+  ],
+  "status": "completed",
+  "liveDemo": "",
+  "sourceCode": "https://github.com/YanjunTong/VQ-VAD",
+  "startDate": "2025-10-01",
+  "endDate": "2026-01-09",
+  "featured": true,
+  "tags": [
+    "Competition",
+    "Computer Vision",
+    "Deep Learning"
+  ]
+}
