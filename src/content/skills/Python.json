@@ -1,8 +1,8 @@
 {
     "name": "Python",
-    "description": "适用于后端、自动化人工智能以及数据科学的强大语言。",
+    "description": "An interpreted, high-level, general-purpose programming language.",
     "icon": "logos:python",
-    "category": "开发语言",
+    "category": "programming",
     "level": "advanced",
     "experience": {
         "years": 4,

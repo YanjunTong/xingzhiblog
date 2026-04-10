@@ -61,6 +61,34 @@ const getLevelText = (level: string) => {
     }
 };
 
+// 技能分类文本映射
+const getCategoryText = (category: string) => {
+    switch (category) {
+        case "programming":
+            return i18n(I18nKey.skillsProgramming);
+        case "ai":
+            return i18n(I18nKey.skillsAI);
+        case "backend":
+            return i18n(I18nKey.skillsBackend);
+        case "client":
+            return i18n(I18nKey.skillsClient);
+        case "frontend":
+            return i18n(I18nKey.skillsFrontend);
+        case "database":
+            return i18n(I18nKey.skillsDatabase);
+        case "engines":
+            return i18n(I18nKey.skillsEngines);
+        case "tools":
+            return i18n(I18nKey.skillsTools);
+        case "devops":
+            return i18n(I18nKey.skillsDevOps);
+        case "others":
+            return i18n(I18nKey.skillsOthers);
+        default:
+            return category;
+    }
+};
+
 // 技能等级进度条宽度
 const getLevelWidth = (level: string) => {
     switch (level) {
@@ -157,7 +185,7 @@ const getExperienceText = (experience: Props["skill"]["experience"]) => {
                 {skill.category && (
                     <div class="mb-2">
                         <span class={`px-2 py-1 bg-blue-50 text-blue-600 dark:bg-blue-900/20 dark:text-blue-400 rounded-sm ${sizeClasses.badge}`}>
-                            {skill.category}
+                            {getCategoryText(skill.category)}
                         </span>
                     </div>
                 )}

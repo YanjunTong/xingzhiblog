@@ -97,6 +97,7 @@ export const en: Translation = {
     // Skills Page
     [Key.skills]: "Skills",
     [Key.skillsSubtitle]: "My technical skills and expertise",
+    [Key.skillsProgramming]: "Programming Languages",
     [Key.skillsAI]: "AI Development",
     [Key.skillsBackend]: "Backend Development",
     [Key.skillsClient]: "Client Development",
@@ -104,6 +105,7 @@ export const en: Translation = {
     [Key.skillsDatabase]: "Database",
     [Key.skillsEngines]: "Engines",
     [Key.skillsTools]: "Development Tools",
+    [Key.skillsDevOps]: "Linux DevOps",
     [Key.skillsOthers]: "Other Skills",
     [Key.skillLevel]: "Proficiency",
     [Key.skillLevelBeginner]: "Beginner",

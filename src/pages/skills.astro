@@ -43,13 +43,15 @@ const skillsByCategory = categories.reduce(
 // 获取分类的翻译文本
 const getCategoryText = (category: string) => {
     switch (category) {
+        case "programming":
+            return i18n(I18nKey.skillsProgramming);
         case "ai":
             return i18n(I18nKey.skillsAI);
-        case "server":
+        case "backend":
             return i18n(I18nKey.skillsBackend);
         case "client":
             return i18n(I18nKey.skillsClient);
-        case "web":
+        case "frontend":
             return i18n(I18nKey.skillsFrontend);
         case "database":
             return i18n(I18nKey.skillsDatabase);
@@ -57,6 +59,8 @@ const getCategoryText = (category: string) => {
             return i18n(I18nKey.skillsEngines);
         case "tools":
             return i18n(I18nKey.skillsTools);
+        case "devops":
+            return i18n(I18nKey.skillsDevOps);
         case "others":
             return i18n(I18nKey.skillsOthers);
         case UNCATEGORIZED:

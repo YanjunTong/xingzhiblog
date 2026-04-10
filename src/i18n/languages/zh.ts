@@ -97,6 +97,7 @@ export const zh: Translation = {
     // 技能展示页面
     [Key.skills]: "技能展示",
     [Key.skillsSubtitle]: "我的技术技能和专业知识",
+    [Key.skillsProgramming]: "编程语言",
     [Key.skillsAI]: "AI 开发",
     [Key.skillsBackend]: "后端开发",
     [Key.skillsClient]: "客户端开发",
@@ -104,6 +105,7 @@ export const zh: Translation = {
     [Key.skillsDatabase]: "数据库",
     [Key.skillsEngines]: "引擎",
     [Key.skillsTools]: "开发工具",
+    [Key.skillsDevOps]: "Linux 运维",
     [Key.skillsOthers]: "其他技能",
     [Key.skillLevel]: "熟练度",
     [Key.skillLevelBeginner]: "初学者",

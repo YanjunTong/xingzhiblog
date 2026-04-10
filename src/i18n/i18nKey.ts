@@ -94,6 +94,7 @@ enum I18nKey {
     // 技能展示页面
     skills = "skills",
     skillsSubtitle = "skillsSubtitle",
+    skillsProgramming = "skillsProgramming",
     skillsAI = "skillsAI",
     skillsBackend = "skillsBackend",
     skillsClient = "skillsClient",
@@ -101,6 +102,7 @@ enum I18nKey {
     skillsDatabase = "skillsDatabase",
     skillsEngines = "skillsEngines",
     skillsTools = "skillsTools",
+    skillsDevOps = "skillsDevOps",
     skillsOthers = "skillsOthers",
     skillLevel = "skillLevel",
     skillLevelBeginner = "skillLevelBeginner",

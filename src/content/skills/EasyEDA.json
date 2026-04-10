@@ -1,0 +1,12 @@
+{
+    "name": "EasyEDA",
+    "description": "A cloud-based PCB design tool.",
+    "icon": "simple-icons:easyeda",
+    "category": "tools",
+    "level": "beginner",
+    "experience": {
+        "years": 0,
+        "months": 6
+    },
+    "color": "#3B82F6"
+}

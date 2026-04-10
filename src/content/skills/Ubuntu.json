@@ -1,0 +1,12 @@
+{
+    "name": "Ubuntu",
+    "description": "A free and open-source Linux distribution based on Debian.",
+    "icon": "logos:ubuntu",
+    "category": "devops",
+    "level": "intermediate",
+    "experience": {
+        "years": 4,
+        "months": 6
+    },
+    "color": "#E95420"
+}

@@ -7,7 +7,7 @@ export interface Skill {
     name: string;
     description: string;
     icon: string; // Iconify icon name
-    category: "ai" | "backend" | "client" | "frontend" | "database" | "engines" | "tools" | "others";
+    category: "programming" | "ai" | "backend" | "client" | "frontend" | "database" | "engines" | "tools" | "devops" | "others";
     level: "beginner" | "intermediate" | "advanced" | "expert";
     experience: {
         years: number;

@@ -1,0 +1,12 @@
+{
+    "name": "C/C++",
+    "description": "A general-purpose programming language.",
+    "icon": "logos:c",
+    "category": "programming",
+    "level": "intermediate",
+    "experience": {
+        "years": 1,
+        "months": 4
+    },
+    "color": "#00599C"
+}

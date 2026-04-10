@@ -14,18 +14,18 @@ draft: false             # 是否为草稿
 &emsp;&emsp;我的大致思路是使用Python的requests库模拟我的浏览器向云脑实例申请接口发一个请求的数据包，等积分到手后为不浪费平台资源再向停止云脑实例的接口再发一个数据包用来停止云脑任务。
 #### 2.2开始抓包
 &emsp;&emsp;打开burpsuite，点击代理，打开内置浏览器
-![BPwebcapture](/public/assets/blogimg/Reverse-API-and-sign-in/BPwebcapture.png)
+![BPwebcapture](/assets/blogimg/Reverse-API-and-sign-in/BPwebcapture.png)
 
 &emsp;&emsp;访问启智的主页，注册或者登录一个账号，并进入到云脑实例的页面。
 
 &emsp;&emsp;这里选择英伟达GPU，然后选0*V100的纯cpu资源，这个资源是免费的，镜像随意选择，然后点击最下面绿色的创建，等待创建完成。
-![openimindbraincreate](/public/assets/blogimg/Reverse-API-and-sign-in/openimindbraincreate.png)
+![openimindbraincreate](/assets/blogimg/Reverse-API-and-sign-in/openimindbraincreate.png)
 
 &emsp;&emsp;等云脑状态显示为running时，我们先停止该资源。
-![openi云脑状态](/public/assets/blogimg/Reverse-API-and-sign-in/openiMindbrainStatue.png)
+![openi云脑状态](/assets/blogimg/Reverse-API-and-sign-in/openiMindbrainStatue.png)
 
-&emsp;&emsp;然后回到Burpsuite，把拦截打开，此时再回到openi的云脑实例管理页面，点击“再次调试”，此时，Burpsuite抓到了数据包以及接口，如图。
-![openi抓包](/public/assets/blogimg/Reverse-API-and-sign-in/openicapturebag.png)
+&emsp;&emsp;然后回到Burpsuite，把拦截打开，此时再回到openi的云脑实例管理页面，点击"再次调试"，此时，Burpsuite抓到了数据包以及接口，如图。
+![openi抓包](/assets/blogimg/Reverse-API-and-sign-in/openicapturebag.png)
 
 我们把抓到数据包复制出来
 ```https
@@ -95,10 +95,10 @@ Priority: u=1, i
 ```
 
 &emsp;&emsp;发现启动和关闭的请求格式基本一致，那么分析清楚了启动的关闭的逻辑，接下来我们就需要寻找一下`csrf`和`id`后面的值如何获取，经过搜索我发现在网页的源代码中居然就存在`csrf`。
-![csrf值获取](/public/assets/blogimg/Reverse-API-and-sign-in/csrfvalueget.png)
+![csrf值获取](/assets/blogimg/Reverse-API-and-sign-in/csrfvalueget.png)
 
 &emsp;&emsp;那这个就秒了，开始关注id属性，同样的搜索方法，我发现在发送启动和停止的请求时，在Response中居然会返回其`id`的值，并且每次发送启动的请求时id值为上次停止请求Response返回的id值，同时发送停止请求时也是同理。
-![id值获取](/public/assets/blogimg/Reverse-API-and-sign-in/idvalueget.png)
+![id值获取](/assets/blogimg/Reverse-API-and-sign-in/idvalueget.png)
 &emsp;&emsp;既然如此，那就好办了，再第一次时先通过网页抓包记录id，然后将id填入程序中，后续每次运行时都储存Response中的is值覆盖上一次值，下次执行时再调用上次存储的id值并再次覆写。
 
 

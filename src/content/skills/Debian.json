@@ -1,0 +1,12 @@
+{
+    "name": "Debian",
+    "description": "A free and open-source operating system composed of free software.",
+    "icon": "logos:debian",
+    "category": "devops",
+    "level": "beginner",
+    "experience": {
+        "years": 4,
+        "months": 3
+    },
+    "color": "#A81D33"
+}
